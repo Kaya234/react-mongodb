@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-mongodb/static/css/main.abf52a4f.css",
-    "main.js": "/react-mongodb/static/js/main.8a67f134.js",
+    "main.js": "/react-mongodb/static/js/main.7d69d589.js",
     "index.html": "/react-mongodb/index.html",
     "main.abf52a4f.css.map": "/react-mongodb/static/css/main.abf52a4f.css.map",
-    "main.8a67f134.js.map": "/react-mongodb/static/js/main.8a67f134.js.map"
+    "main.7d69d589.js.map": "/react-mongodb/static/js/main.7d69d589.js.map"
   },
   "entrypoints": [
     "static/css/main.abf52a4f.css",
-    "static/js/main.8a67f134.js"
+    "static/js/main.7d69d589.js"
   ]
 }
