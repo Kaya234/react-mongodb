@@ -2,7 +2,10 @@ function Footer() {
   return (
     <footer className="footer bg-color text-light text-center">
       <div>
-        <p>Demo page created by Karolina Savincova using Node.js and MongoDB</p>
+        <p>
+          Demo page created by Karolina Savincova using React, Node.js and
+          MongoDB
+        </p>
         <div className="d-flex justify-content-center">
           <a href="https://www.linkedin.com/in/karolina-savincova/">
             <svg
