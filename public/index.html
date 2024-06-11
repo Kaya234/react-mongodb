@@ -11,6 +11,15 @@
   <title>Courses for you</title>
 
   <script type="text/javascript">
+
+    window.addEventListener('focus', e => {
+      document.title = 'Courses for you';
+    });
+
+    window.addEventListener('blur', e => {
+      document.title = 'Wait, come back!';
+    });
+
     // Single Page Apps for GitHub Pages
     // MIT License
     // https://github.com/rafgraph/spa-github-pages
