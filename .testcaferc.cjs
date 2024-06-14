@@ -3,7 +3,7 @@ let os = require("os");
 module.exports = {
     src: "e2e/tests/*.test.ts",
     browsers: ["chrome:headless"],
-    baseUrl: "http://localhost:3006/",
+    baseUrl: "http://localhost:3000/",
     skipJsErrors: true,
     hostname: os.hostname(),
     reporter: [
