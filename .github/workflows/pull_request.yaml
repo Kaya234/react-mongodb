@@ -1,0 +1,36 @@
+name: pull-request
+
+on: [pull_request]
+
+jobs:
+  built-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js v18
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18.x.x"
+      - run: npm install
+      - name: Build page
+        run: |
+          echo 'Building the page...'
+          npm run build
+          echo 'The page is built'
+      - name: Serve page
+        run: |
+          echo 'Serving the page...'
+          npm run serve &
+          echo 'The page is served'
+      - name: Run E2E tests
+        run: |
+          echo 'Running E2E tests...'
+          npm run e2e:github
+          echo 'The E2E tests finished'
+      - name: Upload E2E report
+        uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: E2E report
+          path: ./e2e/reports/report.html
+          retention-days: 7

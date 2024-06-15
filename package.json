@@ -2,7 +2,7 @@
   "name": "courses-page-react-mongodb",
   "homepage": "https://Kaya234.github.io/react-mongodb",
   "version": "1.0.0",
-  "type":"module",
+  "type": "module",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -31,7 +31,9 @@
     "serve": "serve -s build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "e2e:chrome": "npx testcafe chrome e2e/tests/*.test.ts --skip-js-errors",
+    "e2e:github": "testcafe"
   },
   "eslintConfig": {
     "extends": [
@@ -42,7 +44,10 @@
   "devDependencies": {
     "@babel/plugin-transform-private-property-in-object": "^7.23.4",
     "@types/node": "^20.9.5",
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "serve": "^14.2.3",
+    "testcafe": "^3.6.1",
+    "testcafe-reporter-html": "^1.4.6"
   },
   "browserslist": {
     "production": [
